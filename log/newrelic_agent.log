@@ -1,0 +1,81 @@
+# Logfile created on 2017-04-10 01:36:05 +0000 by logger.rb/54362
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Starting the New Relic agent in "production" environment.
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Reading configuration from config/newrelic.yml
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] WARN : Agent is configured not to use SSL when communicating with New Relic's servers
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Environment: production
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : No known dispatcher detected.
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Application: Sharetribe
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : delayed_job not available: No DJ worker present
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Net instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Dalli Memcache instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing deferred Rack instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Rails 4 Error instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Installing Rails 4 view instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Finished instrumentation
+[04/10/17 01:36:05 +0000 357215d0c05c (778)] INFO : Starting Agent shutdown
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Starting the New Relic agent in "production" environment.
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Reading configuration from config/newrelic.yml
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] WARN : Agent is configured not to use SSL when communicating with New Relic's servers
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Environment: production
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : No known dispatcher detected.
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Application: Sharetribe
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : delayed_job not available: No DJ worker present
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Net instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Dalli Memcache instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing deferred Rack instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Rails 4 Error instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Installing Rails 4 view instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Finished instrumentation
+[04/10/17 01:37:48 +0000 357215d0c05c (796)] INFO : Starting Agent shutdown
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Starting the New Relic agent in "production" environment.
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Reading configuration from config/newrelic.yml
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] WARN : Agent is configured not to use SSL when communicating with New Relic's servers
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Environment: production
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : No known dispatcher detected.
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Application: Sharetribe
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : delayed_job not available: No DJ worker present
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Net instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Dalli Memcache instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing deferred Rack instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Rails 4 Error instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Installing Rails 4 view instrumentation
+[04/10/17 01:39:15 +0000 357215d0c05c (809)] INFO : Finished instrumentation
+[04/10/17 01:39:16 +0000 357215d0c05c (809)] INFO : Starting Agent shutdown
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Starting the New Relic agent in "production" environment.
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Reading configuration from config/newrelic.yml
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] WARN : Agent is configured not to use SSL when communicating with New Relic's servers
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Environment: production
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : No known dispatcher detected.
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Application: Sharetribe
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : delayed_job not available: No DJ worker present
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Net instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Dalli Memcache instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing ActiveRecord 4 instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Rails 3+ middleware instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing deferred Rack instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Rack::Builder middleware instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Rails 4 Controller instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Rails 4 Error instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Installing Rails 4 view instrumentation
+[04/10/17 02:13:51 +0000 357215d0c05c (1168)] INFO : Finished instrumentation
+[04/10/17 02:13:52 +0000 357215d0c05c (1168)] INFO : Starting Agent shutdown
