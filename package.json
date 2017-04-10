@@ -5,6 +5,7 @@
     "node": "6.9"
   },
   "scripts": {
+    "ensure-node-version": "check-node-version --package",
     "postinstall": "cd client && npm install",
     "clean": "rm -f app/assets/webpack/*"
   },
