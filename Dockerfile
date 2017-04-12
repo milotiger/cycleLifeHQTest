@@ -66,11 +66,13 @@ COPY package.json /opt/app/
 COPY client/package.json /opt/app/client/
 COPY client/customloaders/customfileloader /opt/app/client/customloaders/customfileloader
 
+
+
+WORKDIR /opt/app/client
+
 ENV NODE_ENV production
 ENV NPM_CONFIG_LOGLEVEL error
 ENV NPM_CONFIG_PRODUCTION true
-
-WORKDIR /opt/app/client
 
 RUN npm install
 
