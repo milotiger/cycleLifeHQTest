@@ -95,8 +95,6 @@ Devise.setup do |config|
   # to authenticate or find a user. Default is :email.
   config.case_insensitive_keys = [ :username, :login ]
 
-  config.secret_key = 'fa09ff0819f10e11861c600515374e0629b14826e90b0bda0b8bbf67da250848045d7b65f643e1f987e623544b27b1d2207a845aff3bec3c38f47a7d169aad94'
-
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
@@ -151,6 +149,9 @@ Devise.setup do |config|
 
   # Defines which key will be used when confirming an account
   config.confirmation_keys = [ :id ]
+
+  #my config
+  config.secret_key = '705daf88ffefa44616c39e9589a52265403c1ba65e76d3bada2ec356900eee2933580e8f2385d73129308798fd64fff0531251e440333aa11bef5a5fbd284e86'
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.17, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.6.32, for osx10.10 (x86_64)
 --
--- Host: localhost    Database: sharetribe_development
+-- Host: 127.0.0.1    Database: sharetribe_development
 -- ------------------------------------------------------
--- Server version	5.7.17-0ubuntu0.16.04.2
+-- Server version	5.7.15-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -594,26 +594,6 @@ CREATE TABLE `emails` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `favors`
---
-
-DROP TABLE IF EXISTS `favors`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `favors` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` varchar(255) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `description` text,
-  `payment` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `status` varchar(255) DEFAULT 'enabled',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Table structure for table `feature_flags`
 --
 
@@ -652,24 +632,6 @@ CREATE TABLE `feedbacks` (
   `community_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `filters`
---
-
-DROP TABLE IF EXISTS `filters`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `filters` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `person_id` varchar(255) DEFAULT NULL,
-  `keywords` text,
-  `category` varchar(255) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -718,57 +680,6 @@ CREATE TABLE `invitations` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `items`
---
-
-DROP TABLE IF EXISTS `items`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `items` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` varchar(255) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `payment` int(11) DEFAULT NULL,
-  `status` varchar(255) DEFAULT 'enabled',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `kassi_events`
---
-
-DROP TABLE IF EXISTS `kassi_events`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `kassi_events` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `receiver_id` varchar(255) DEFAULT NULL,
-  `realizer_id` varchar(255) DEFAULT NULL,
-  `eventable_id` int(11) DEFAULT NULL,
-  `eventable_type` varchar(255) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `kassi_events_people`
---
-
-DROP TABLE IF EXISTS `kassi_events_people`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `kassi_events_people` (
-  `person_id` varchar(255) DEFAULT NULL,
-  `kassi_event_id` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Table structure for table `landing_page_versions`
 --
 
@@ -804,25 +715,6 @@ CREATE TABLE `landing_pages` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `index_landing_pages_on_community_id` (`community_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `listing_comments`
---
-
-DROP TABLE IF EXISTS `listing_comments`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `listing_comments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `author_id` varchar(255) DEFAULT NULL,
-  `listing_id` int(11) DEFAULT NULL,
-  `content` text,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `is_read` int(11) DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1482,82 +1374,6 @@ CREATE TABLE `people` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `person_comments`
---
-
-DROP TABLE IF EXISTS `person_comments`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `person_comments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `author_id` varchar(255) DEFAULT NULL,
-  `target_person_id` varchar(255) DEFAULT NULL,
-  `text_content` text,
-  `grade` int(11) DEFAULT NULL,
-  `task_type` varchar(255) DEFAULT NULL,
-  `task_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `kassi_event_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `person_conversations`
---
-
-DROP TABLE IF EXISTS `person_conversations`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `person_conversations` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `person_id` varchar(255) DEFAULT NULL,
-  `conversation_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `is_read` int(11) DEFAULT '0',
-  `last_sent_at` datetime DEFAULT NULL,
-  `last_received_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `person_interesting_listings`
---
-
-DROP TABLE IF EXISTS `person_interesting_listings`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `person_interesting_listings` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `person_id` varchar(255) DEFAULT NULL,
-  `listing_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `person_read_listings`
---
-
-DROP TABLE IF EXISTS `person_read_listings`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `person_read_listings` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `person_id` varchar(255) DEFAULT NULL,
-  `listing_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Table structure for table `prospect_emails`
 --
 
@@ -1783,7 +1599,7 @@ CREATE TABLE `transactions` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-10  1:37:23
+-- Dump completed on 2017-02-20 14:36:16
 INSERT INTO schema_migrations (version) VALUES ('20080806070738');
 
 INSERT INTO schema_migrations (version) VALUES ('20080807071903');

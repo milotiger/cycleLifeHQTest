@@ -33,19 +33,10 @@ default: &default_settings
   # of the S3 bucket.
   # NOTE: in Heroku you can't store files in local system, so S3 should be used
 
-  # Default bucket
-  s3_bucket_name:
-
-  # AWS S3 region
-  s3_region: us-east-1
-
   # Cache-Control: max-age time in seconds for assets uploaded to S3.
   # Default is one day. Normally, you can use the default. Links to images have
   # modification timestamp appended as query parameter and that should be enough for cache invalidation.
   s3_cache_max_age: 86400
-
-  # Bucket for files users upload directly to S3. You can add an expiration policy to these files.
-  s3_upload_bucket_name:
 
   # Server assets directly from the Rails application, defaults to true
   #
@@ -479,9 +470,10 @@ test:
 
   # don't use S3 in tests. (this is the default to avoid
   # anyone losing money for paying for the hosting of test images)
-  s3_bucket_name:
-  aws_access_key_id:
-  aws_secret_access_key:
+  s3_bucket_name: "sharetribe-images-15011995"
+  aws_access_key_id: "AKIAJAUK4YNMFIW7JAXA"
+  s3_region: ap-southeast-2
+  aws_secret_access_key: "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"
 
   sns_notification_token: test_token
 

@@ -5,7 +5,7 @@
 #
 # Usage:
 #
-# Copy this file from `config/config.example.yml` to `config/config.yml`
+# Copy this file from `config/config.yml` to `config/config.yml`
 #
 
 development:
@@ -20,15 +20,7 @@ staging:
 production:
   # Add local `production` environment configuration overrides here
     s3_bucket_name: "sharetribe-images-15011995"
-    
+    aws_access_key_id: "AKIAINOUPIUN3QNYVZDA"
     s3_region: ap-southeast-2
-
-    s3_cache_max_age: 86400
-
-    s3_upload_bucket_name: "sharetribe-images-tmp-15011995"
-
-    serve_static_files: true
-
-    aws_access_key_id: "AKIAJAUK4YNMFIW7JAXA"
-
-    aws_secret_access_key: "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"
+    s3_endpoint: autoscaling.ap-southeast-2.amazonaws.com
+    aws_secret_access_key: "KWsTbKG/bJbHOmY1zOIdfONlhK84iM0C/IBcPDN3"
