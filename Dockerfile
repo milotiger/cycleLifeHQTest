@@ -70,9 +70,13 @@ ENV NODE_ENV production
 ENV NPM_CONFIG_LOGLEVEL error
 ENV NPM_CONFIG_PRODUCTION true
 
+WORKDIR /opt/app/client
+
 RUN npm install
 
 COPY . /opt/app
+
+WORKDIR /opt/app
 
 EXPOSE 3000
 
